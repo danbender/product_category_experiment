@@ -17,9 +17,9 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 .clearfix:after { clear: both; }
 
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
-    color: #fff;
-    background: #333;
+  font-family: 'Helvetica', Arial, sans-serif;
+  color: #fff;
+  background: #333;
 }
 
 html, body,
@@ -53,10 +53,8 @@ a:hover {
 .side {
   position: fixed;
   top: 0;
-  /*margin-left: 20%;*/
   z-index: 100;
-  /*width: 80%;*/
-  width: 50%;
+  width: 100%;
   height: 100%;
   text-align: center;
   -webkit-backface-visibility: hidden;
@@ -89,9 +87,11 @@ a:hover {
 }
 
 .intro-content {
-  position: absolute;
+/*  position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;*/
+  margin-left: 30%;
+  margin-top: 20%;
   padding: 0 1em;
   width: 50%;
   cursor: pointer;
@@ -283,8 +283,8 @@ a:hover {
 
 .open-left .side-left {
   z-index: 200;
-  -webkit-transform: translateX(150%);
-  transform: translateX(150%);
+  -webkit-transform: translateX(80%);
+  transform: translateX(80%);
 }
 
 .close-left .side-left {
