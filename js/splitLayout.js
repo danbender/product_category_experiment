@@ -1,5 +1,4 @@
-/*Split layout based on codrops.com,
- original copyright 2013 */
+/*Split layout based on codrops.com, copyright 2013 */
 
 (function() {
   'use strict';
@@ -11,17 +10,19 @@
   }
 
   var splitlayout = document.getElementById( 'splitlayout' ),
-    leftSide = splitlayout.querySelector( 'div.intro > div.side-left' ),
-    pageLeft = splitlayout.querySelector( 'div.page-left' ),
-    eventtype = mobilecheck() ? 'touchstart' : 'click',
-    transEndEventNames = {
-      'WebkitTransition': 'webkitTransitionEnd',
-      'MozTransition': 'transitionend',
-      'OTransition': 'oTransitionEnd',
-      'msTransition': 'MSTransitionEnd',
-      'transition': 'transitionend'
-    },
-    transEndEventName = transEndEventNames[Modernizr.prefixed( 'transition' )];
+                    leftSide = splitlayout.querySelector( 'div.intro > div.side-left' ),
+                    pageLeft = splitlayout.querySelector( 'div.page-left' ),
+                    eventtype = mobilecheck() ? 'touchstart' : 'click',
+
+                    transEndEventNames = {
+                      'WebkitTransition': 'webkitTransitionEnd',
+                      'MozTransition': 'transitionend',
+                      'OTransition': 'oTransitionEnd',
+                      'msTransition': 'MSTransitionEnd',
+                      'transition': 'transitionend'
+                    },
+
+                    transEndEventName = transEndEventNames[Modernizr.prefixed( 'transition' )];
 
   function init() {
     if( mobilecheck() ) {
