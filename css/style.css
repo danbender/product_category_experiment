@@ -54,7 +54,8 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 100;
-  width: 100%;
+  /*width: 100%;*/
+  width: 50%;
   height: 100%;
   text-align: center;
   -webkit-backface-visibility: hidden;
@@ -87,16 +88,17 @@ a:hover {
 }
 
 .intro-content {
-/*  position: absolute;
+  position: absolute;
   top: 50%;
-  left: 35%;*/
-  margin-left: 30%;
-  margin-top: 20%;
+  left: 50%;
+  /*margin-left: 30%;*/
+  /*margin-top: 20%;*/
   padding: 0 1em;
   width: 50%;
   cursor: pointer;
   -webkit-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
+
 }
 
 .profile {
@@ -171,7 +173,6 @@ a:hover {
   color: #fff;
 }
 
-/*.open-right .back-left,*/
 .open-left .back-right {
   visibility: visible;
   opacity: 1;
@@ -198,8 +199,8 @@ a:hover {
 
 .page-left {
   left: 0;
-  outline: 5px solid #34495e; /* avoid rounding gaps */
-  background: #34495e;
+  outline: 5px solid #95a5a6; /* avoid rounding gaps */
+  background: #95a5a6;
   color: #fff;
   text-align: right;
   -webkit-transform: translateX(-100%);
@@ -207,7 +208,7 @@ a:hover {
 }
 
 .splitlayout.open-left {
-  background: #34495e;
+  background: #95a5a6;
 }
 
 /* Inner page */
@@ -283,8 +284,10 @@ a:hover {
 
 .open-left .side-left {
   z-index: 200;
-  -webkit-transform: translateX(80%);
-  transform: translateX(80%);
+  /*-webkit-transform: translateX(80%);*/
+  /*transform: translateX(80%);*/
+  -webkit-transform: translateX(150%);
+  transform: translateX(150%);
 }
 
 .close-left .side-left {
