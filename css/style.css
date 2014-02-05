@@ -54,8 +54,8 @@ a:hover {
   position: fixed;
   top: 0;
   z-index: 100;
-  /*width: 100%;*/
-  width: 50%;
+  /*width: 50%;*/
+  width: 100%;
   height: 100%;
   text-align: center;
   -webkit-backface-visibility: hidden;
@@ -97,6 +97,9 @@ a:hover {
   width: 50%;
   cursor: pointer;
   -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
 
 }
@@ -169,6 +172,9 @@ a:hover {
 .back-right {
   right: 12.5%;
   -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -ms-transform: translateX(50%);
   transform: translateX(50%);
   color: #fff;
 }
@@ -177,6 +183,9 @@ a:hover {
   visibility: visible;
   opacity: 1;
   -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
   transition-delay: 0.3s;
   pointer-events: auto;
 }
@@ -204,6 +213,9 @@ a:hover {
   color: #fff;
   text-align: right;
   -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
@@ -235,22 +247,34 @@ a:hover {
 .side,
 .page {
   -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -webkit-transform 0.6s;
+  -o-transition: -webkit-transform 0.6s;
+  -ms-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
 }
 
 .overlay {
   -webkit-transition: opacity 0.6s, visibility 0.1s 0.6s;
+  -moz-transition: opacity 0.6s, visibility 0.1s 0.6s;
+  -o-transition: opacity 0.6s, visibility 0.1s 0.6s;
+  -ms-transition: opacity 0.6s, visibility 0.1s 0.6s;
   transition: opacity 0.6s, visibility 0.1s 0.6s;
 }
 
 .intro-content {
   -webkit-transition: -webkit-transform 0.6s, top 0.6s;
+  -moz-transition: -webkit-transform 0.6s, top 0.6s;
+  -o-transition: -webkit-transform 0.6s, top 0.6s;
+  -ms-transition: -webkit-transform 0.6s, top 0.6s;
   transition: transform 0.6s, top 0.6s;
 }
 
 .intro-content h1,
 .back {
   -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -274,11 +298,17 @@ a:hover {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  -ms-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 
 .open-left .side-right {
   -webkit-transform: translateX(60%);
+  -moz-transform: translateX(60%);
+  -ms-transform: translateX(60%);
+  -o-transform: translateX(60%);
   transform: translateX(60%);
 }
 
@@ -287,6 +317,9 @@ a:hover {
   /*-webkit-transform: translateX(80%);*/
   /*transform: translateX(80%);*/
   -webkit-transform: translateX(150%);
+  -moz-transform: translateX(150%);
+  -o-transform: translateX(150%);
+  -ms-transform: translateX(150%);
   transform: translateX(150%);
 }
 
@@ -296,11 +329,17 @@ a:hover {
 
 .open-left .side-left .intro-content {
   -webkit-transform: translateY(-50%) translateX(-100%) scale(0.6);
+  -moz-transform: translateY(-50%) translateX(-100%) scale(0.6);
+  -o-transform: translateY(-50%) translateX(-100%) scale(0.6);
+  -ms-transform: translateY(-50%) translateX(-100%) scale(0.6);
   transform: translateY(-50%) translateX(-100%) scale(0.6);
 }
 
 .open-left .page-left {
   -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
 
@@ -317,11 +356,17 @@ a:hover {
 
   .open-left .side-right {
     -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
     transform: translateX(100%);
   }
 
   .open-left .side-left {
     -webkit-transform: translateX(175%);
+    -moz-transform: translateX(175%);
+    -o-transform: translateX(175%);
+    -ms-transform: translateX(175%);
     transform: translateX(175%);
   }
 
@@ -340,6 +385,9 @@ a:hover {
   .open-left .side-left .intro-content {
     top: 100%;
     -webkit-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
+    -moz-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
+    -o-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
+    -ms-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
     transform: translateY(-150px) translateX(-87.5%) scale(0.5);
   }
 
@@ -356,12 +404,20 @@ a:hover {
 @media screen and (max-height: 41.125em) {
   .intro-content {
     -webkit-transform: translateY(-25%) translateX(-50%);
+    -moz-transform: translateY(-25%) translateX(-50%);
+    -o-transform: translateY(-25%) translateX(-50%);
+    -ms-transform: translateY(-25%) translateX(-50%);
     transform: translateY(-25%) translateX(-50%);
   }
 }
 
 @media screen and (max-width: 39.375em) {
-  .intro-content .profile { -webkit-transform: scale(0.5); transform: scale(0.5); }
+  .intro-content .profile {
+    -webkit-transform: scale(0.5); transform: scale(0.5);
+    -moz-transform: scale(0.5); transform: scale(0.5);
+    -o-transform: scale(0.5); transform: scale(0.5);
+    -ms-transform: scale(0.5); transform: scale(0.5);
+  }
 }
 
 @media screen and (max-width: 320px) {
