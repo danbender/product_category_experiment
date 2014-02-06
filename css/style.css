@@ -20,6 +20,7 @@ body {
   font-family: 'Helvetica', Arial, sans-serif;
   color: #fff;
   background: #cecece;
+  overflow-y: scroll;
 }
 
 html, body,
@@ -29,18 +30,19 @@ html, body,
   height: 100%;
 }
 
-body {
-  overflow-y: scroll;
-  background: #cecece;
-}
-
 a {
   color: #ccc;
   text-decoration: none;
 }
 
-a:hover {
-  color: #000;
+a:hover, a:focus, a:active,
+section:hover, section:focus, section:active {
+  color: #7f8c8d;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 h1, h3, h4, p {
@@ -62,11 +64,11 @@ h3 {
   position: fixed;
   top: 0;
   z-index: 100;
-  /*width: 50%;*/
   width: 100%;
   height: 100%;
   text-align: center;
-  -webkit-backface-visibility: hidden;
+  -webkit-backgroundface-visibility: hidden;
+  overflow-y: scroll;
 }
 
 .open-left .side {
@@ -104,18 +106,17 @@ h3 {
   padding: 0 1em;
   width: 50%;
   cursor: pointer;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-20%) translateX(-50%);
+  -moz-transform: translateY(-20%) translateX(-50%);
+  -o-transform: translateY(-20%) translateX(-50%);
+  -ms-transform: translateY(-20%) translateX(-50%);
+  transform: translateY(-20%) translateX(-50%);
 }
 
 .product-image-wrapper {
   margin: 0 auto;
-  width: 140px;
-  height: 140px;
-  /*border-radius: 50%;*/
+  width: 200px;
+  height: 200px;
   background: transparent;
 }
 
@@ -248,27 +249,39 @@ h3 {
 
 /* */
 
-#profileOne {
+#profileOne, #profileTwo, #profileThree {
   height: 50%;
 }
 
-.page-left #profileOne .product-image-wrapper {
+.page-left #profileOne .product-image-wrapper,
+.page-left #profileTwo .product-image-wrapper,
+.page-left #profileThree .product-image-wrapper {
   margin: 0 auto;
+  margin-top: 7.5%;
   width: 30%;
   height: auto;
   text-align: center;
 }
 
-.page-left #profileOne .product-image-wrapper img {
+.page-left #profileOne .product-image-wrapper img.
+.page-left #profileTwo .product-image-wrapper img,
+.page-left #profileThree .product-image-wrapper img {
   border-radius: 3px;
   display: block;
 }
 
-.page-left #profileOne h3 span {
+.page-left #profileOne h3 span,
+.page-left #profileTwo h3 span,
+.page-left #profileThree h3 span {
   font-size: 0.5em;
   display: block;
   font-weight: normal;
   margin-top: 10px;
+}
+
+.page-left section:hover, .page-left section:focus,
+.page-left section:active {
+  color: #fff !important;
 }
 
 
@@ -350,11 +363,11 @@ h3 {
 }
 
 .open-left .side-left .intro-content {
-  -webkit-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  -moz-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  -o-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  -ms-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  transform: translateY(-80%) translateX(-130%) scale(0.6);
+  -webkit-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  -moz-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  -o-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  -ms-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  transform: translateY(-40%) translateX(-130%) scale(0.6);
 }
 
 .open-left .page-left {
@@ -393,19 +406,21 @@ h3 {
   }
 
   .intro-content {
-    width: g100%;
+    width: 100%;
   }
 
   .open-left .side-left .intro-content {
     top: 100%;
-    -webkit-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    -moz-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    -o-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    -ms-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    transform: translateY(-150px) translateX(-130%) scale(0.5);
+    -webkit-transform: translateY(-550px) translateX(-90%) scale(0.5);
+    -moz-transform: translateY(-550px) translateX(-90%) scale(0.5);
+    -o-transform: translateY(-550px) translateX(-90%) scale(0.5);
+    -ms-transform: translateY(-550px) translateX(-90%) scale(0.5);
+    transform: translateY(-550px) translateX(-90%) scale(0.5);
   }
 
-  .open-left .side-left .intro-content #profileOne h1 {
+  .open-left .side-left .intro-content #profileOne h1,
+  .open-left .side-left .intro-content #profileTwo h1,
+  .open-left .side-left .intro-content #profileThree h1 {
     display: none;
   }
 
@@ -423,11 +438,11 @@ h3 {
 
 @media screen and (max-height: 41.125em) {
   .intro-content {
-    -webkit-transform: translateY(-25%) translateX(-50%);
-    -moz-transform: translateY(-25%) translateX(-50%);
-    -o-transform: translateY(-25%) translateX(-50%);
-    -ms-transform: translateY(-25%) translateX(-50%);
-    transform: translateY(-25%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
   }
 }
 
