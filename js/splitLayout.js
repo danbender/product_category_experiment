@@ -62,3 +62,18 @@
   init();
 
 })();
+
+
+var clonedProduct = document.getElementById('profileOne')
+
+clonedProduct.addEventListener('click', function(ev) {
+  var elm = clonedProduct.cloneNode(true);
+  removeChildren(document.getElementById('helloworld'));
+  document.getElementById('helloworld').appendChild(elm);
+});
+
+function removeChildren(element) {
+  while(element.firstElementChild) {
+    element.removeChild(element.firstElementChild);
+  }
+}
