@@ -377,7 +377,8 @@ a:hover {
   }
 
   .back-right {
-    right: 6.25%;
+    right: 10%;
+    top: 0;
   }
 }
 
