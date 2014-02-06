@@ -407,15 +407,17 @@ h3 {
 
   .intro-content {
     width: 50%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .open-left .side-left .intro-content {
     top: 100%;
-    -webkit-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    -moz-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    -o-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    -ms-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    transform: translateY(-550px) translateX(-90%) scale(0.5);
+    -webkit-transform: translateY(-550px) translateX(-130%) scale(0.5);
+    -moz-transform: translateY(-550px) translateX(-130%) scale(0.5);
+    -o-transform: translateY(-550px) translateX(-130%) scale(0.5);
+    -ms-transform: translateY(-550px) translateX(-130%) scale(0.5);
+    transform: translateY(-550px) translateX(-130%) scale(0.5);
   }
 
   .open-left .side-left .intro-content #profileOne h1,
