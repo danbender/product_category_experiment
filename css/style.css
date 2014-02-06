@@ -43,8 +43,12 @@ a:hover {
   color: #000;
 }
 
-h1, p {
+h1, h3, h4, p {
   text-align: center !important;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 .splitlayout {
@@ -121,23 +125,27 @@ h1, p {
   opacity: 1;
 }
 
-.intro-content h1 > span {
+.intro-content h1 span {
   display: block;
   white-space: nowrap;
 }
 
-.intro-content h1 > span:first-child {
+.intro-content h1 span:first-child {
   font-weight: 300;
   font-size: 1em;
 }
 
-.intro-content h1 > span:nth-child(2) {
+.intro-content h1 span:nth-child(2) {
   position: relative;
   margin-top: 0.5em;
   padding: 0.8em;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8em;
+}
+
+.intro-content h3 span {
+  display: none;
 }
 
 .back {
@@ -256,6 +264,13 @@ h1, p {
   display: block;
 }
 
+.page-left #profileOne h3 span {
+  font-size: 0.5em;
+  display: block;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
 
 
 /* All transitions */
@@ -291,6 +306,8 @@ h1, p {
   -ms-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+
+
 
 /* Open and close */
 
