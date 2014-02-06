@@ -70,7 +70,7 @@ clonedProduct.addEventListener('click', function(ev) {
   var elm = clonedProduct.cloneNode(true);
   removeChildren(document.getElementById('product-view-wrapper'));
   document.getElementById('product-view-wrapper').appendChild(elm);
-});
+}, true);
 
 function removeChildren(element) {
   while(element.firstElementChild) {
