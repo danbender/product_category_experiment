@@ -149,6 +149,7 @@ if ( typeof define === 'function' && define.amd ) {
 
 var clonedProduct = document.getElementById('profileOne')
 var clonedProduct2 = document.getElementById('profileTwo')
+var clonedProduct3 = document.getElementById('profileThree')
 
 clonedProduct.addEventListener('click', function(ev) {
   var elm = clonedProduct.cloneNode(true);
@@ -157,6 +158,12 @@ clonedProduct.addEventListener('click', function(ev) {
 }, true);
 
 clonedProduct2.addEventListener('click', function(ev) {
+  var elm = clonedProduct2.cloneNode(true);
+  removeChildren(document.getElementById('product-view-wrapper'));
+  document.getElementById('product-view-wrapper').appendChild(elm);
+}, true);
+
+clonedProduct3.addEventListener('click', function(ev) {
   var elm = clonedProduct2.cloneNode(true);
   removeChildren(document.getElementById('product-view-wrapper'));
   document.getElementById('product-view-wrapper').appendChild(elm);

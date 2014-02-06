@@ -62,11 +62,11 @@ h3 {
   position: fixed;
   top: 0;
   z-index: 100;
-  /*width: 50%;*/
   width: 100%;
   height: 100%;
   text-align: center;
   -webkit-backface-visibility: hidden;
+  overflow-y: scroll;
 }
 
 .open-left .side {
@@ -104,18 +104,17 @@ h3 {
   padding: 0 1em;
   width: 50%;
   cursor: pointer;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-20%) translateX(-50%);
+  -moz-transform: translateY(-20%) translateX(-50%);
+  -o-transform: translateY(-20%) translateX(-50%);
+  -ms-transform: translateY(-20%) translateX(-50%);
+  transform: translateY(-20%) translateX(-50%);
 }
 
 .product-image-wrapper {
   margin: 0 auto;
-  width: 140px;
-  height: 140px;
-  /*border-radius: 50%;*/
+  width: 200px;
+  height: 200px;
   background: transparent;
 }
 
@@ -248,12 +247,13 @@ h3 {
 
 /* */
 
-#profileOne, #profileTwo {
+#profileOne, #profileTwo, #profileThree {
   height: 50%;
 }
 
 .page-left #profileOne .product-image-wrapper,
-.page-left #profileTwo .product-image-wrapper {
+.page-left #profileTwo .product-image-wrapper,
+.page-left #profileThree .product-image-wrapper {
   margin: 0 auto;
   width: 30%;
   height: auto;
@@ -261,13 +261,15 @@ h3 {
 }
 
 .page-left #profileOne .product-image-wrapper img.
-.page-left #profileTwo .product-image-wrapper img {
+.page-left #profileTwo .product-image-wrapper img,
+.page-left #profileThree .product-image-wrapper img {
   border-radius: 3px;
   display: block;
 }
 
 .page-left #profileOne h3 span,
-.page-left #profileTwo h3 span {
+.page-left #profileTwo h3 span,
+.page-left #profileThree h3 span {
   font-size: 0.5em;
   display: block;
   font-weight: normal;
@@ -353,11 +355,11 @@ h3 {
 }
 
 .open-left .side-left .intro-content {
-  -webkit-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  -moz-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  -o-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  -ms-transform: translateY(-80%) translateX(-130%) scale(0.6);
-  transform: translateY(-80%) translateX(-130%) scale(0.6);
+  -webkit-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  -moz-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  -o-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  -ms-transform: translateY(-40%) translateX(-130%) scale(0.6);
+  transform: translateY(-40%) translateX(-130%) scale(0.6);
 }
 
 .open-left .page-left {
@@ -396,7 +398,7 @@ h3 {
   }
 
   .intro-content {
-    width: g100%;
+    width: 100%;
   }
 
   .open-left .side-left .intro-content {
@@ -409,7 +411,8 @@ h3 {
   }
 
   .open-left .side-left .intro-content #profileOne h1,
-  .open-left .side-left .intro-content #profileTwo h1 {
+  .open-left .side-left .intro-content #profileTwo h1,
+  .open-left .side-left .intro-content #profileThree h1 {
     display: none;
   }
 
