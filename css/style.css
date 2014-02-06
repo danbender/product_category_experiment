@@ -344,19 +344,19 @@ a:hover {
 @media screen and (max-width: 49.4375em) {
 
   .open-left .side-left {
-    -webkit-transform: translateX(175%);
-    -moz-transform: translateX(175%);
-    -o-transform: translateX(175%);
-    -ms-transform: translateX(175%);
-    transform: translateX(175%);
+    -webkit-transform: translateX(80%);
+    -moz-transform: translateX(80%);
+    -o-transform: translateX(80%);
+    -ms-transform: translateX(80%);
+    transform: translateX(80%);
   }
 
   .page {
-    width: 100%;
+    width: 80%;
   }
 
   .page-left {
-    padding-right: 15%;
+    /*padding-right: 15%;*/
   }
 
   .intro-content {
@@ -365,11 +365,15 @@ a:hover {
 
   .open-left .side-left .intro-content {
     top: 100%;
-    -webkit-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
-    -moz-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
-    -o-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
-    -ms-transform: translateY(-150px) translateX(-87.5%) scale(0.5);
-    transform: translateY(-150px) translateX(-87.5%) scale(0.5);
+    -webkit-transform: translateY(-150px) translateX(-90%) scale(0.5);
+    -moz-transform: translateY(-150px) translateX(-90%) scale(0.5);
+    -o-transform: translateY(-150px) translateX(-90%) scale(0.5);
+    -ms-transform: translateY(-150px) translateX(-90%) scale(0.5);
+    transform: translateY(-150px) translateX(-90%) scale(0.5);
+  }
+
+  .open-left .side-left .intro-content #profileOne h1 {
+    display: none;
   }
 
   .back-right {
