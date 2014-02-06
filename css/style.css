@@ -43,6 +43,10 @@ a:hover {
   color: #000;
 }
 
+h1, p {
+  text-align: center !important;
+}
+
 .splitlayout {
   position: relative;
   overflow-x: hidden;
@@ -124,7 +128,7 @@ a:hover {
 
 .intro-content h1 > span:first-child {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .intro-content h1 > span:nth-child(2) {
@@ -134,17 +138,6 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8em;
-}
-
-/* Separator */
-.intro-content h1 > span:nth-child(2):before {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  width: 50%;
-  height: 2px;
-  background: #fff;
-  content: '';
 }
 
 .back {
@@ -243,6 +236,27 @@ a:hover {
   font-weight: 300;
   font-size: 1.2em;
 }
+
+
+/* */
+
+#profileOne {
+  height: 50%;
+}
+
+.page-left #profileOne .product-image-wrapper {
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.page-left #profileOne .product-image-wrapper img {
+  border-radius: 3px;
+  display: block;
+}
+
+
 
 /* All transitions */
 .side,.page {
