@@ -53,16 +53,15 @@
 
     clonedProduct.addEventListener('click', function(ev) {
       var elm = clonedProduct.cloneNode(true);
-      var toBeReplaced =  document.getElementById('helloworld').querySelector
-      // document.getElementById('helloworld').appendChild(elm);
-      toBeReplaced.parentNode.replaceChild(elm, toBeReplaced)
+      removeChildren(document.getElementById('helloworld'));
+      document.getElementById('helloworld').appendChild(elm);
     });
 
-//     clonedProduct.addEventListener('click', function(ev) {
-//       var elm = clonedProduct.cloneNode(true);
-//       var cloneProdView = document.getElementById('helloworld').querySelectorAll("*")
-//       document.getElementById('helloworld').replaceChild(elm,cloneProdView);
-//     })
+    function removeChildren(element) {
+      while(element.firstElementChild) {
+        element.removeChild(element.firstElementChild);
+      }
+    }
   </script>
 </body>
 </html>
