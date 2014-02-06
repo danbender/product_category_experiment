@@ -19,7 +19,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 body {
   font-family: 'Helvetica', Arial, sans-serif;
   color: #fff;
-  background: #95a5a6;
+  background: #cecece;
 }
 
 html, body,
@@ -31,7 +31,7 @@ html, body,
 
 body {
   overflow-y: scroll;
-  background: #95a5a6;
+  background: #cecece;
 }
 
 a {
@@ -82,9 +82,9 @@ a:hover {
 
 .side-left {
   left: 0;
-  background: #cecece;
-  color: #fff;
-  outline: 1px solid #cecece; /* avoid gap */
+  background: #fff;
+  color: #cecece;
+  outline: 1px solid #fff; /* avoid gap */
 }
 
 .intro-content {
@@ -108,7 +108,7 @@ a:hover {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: #95a5a6;
+  background: #cecece;
 }
 
 .product-image-wrapper img {
@@ -208,8 +208,8 @@ a:hover {
 
 .page-left {
   left: 0;
-  outline: 5px solid #95a5a6; /* avoid rounding gaps */
-  background: #95a5a6;
+  outline: 5px solid #cecece; /* avoid rounding gaps */
+  background: #cecece;
   color: #fff;
   text-align: right;
   -webkit-transform: translateX(-100%);
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .splitlayout.open-left {
-  background: #95a5a6;
+  background: #cecece;
 }
 
 /* Inner page */
