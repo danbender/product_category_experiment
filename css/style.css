@@ -380,6 +380,7 @@ a:hover {
   .back-right {
     right: 10%;
     top: 0;
+    padding-left: 0;
   }
 }
 
