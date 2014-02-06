@@ -257,6 +257,7 @@ h3 {
 .page-left #profileTwo .product-image-wrapper,
 .page-left #profileThree .product-image-wrapper {
   margin: 0 auto;
+  margin-top: 7.5%;
   width: 30%;
   height: auto;
   text-align: center;
