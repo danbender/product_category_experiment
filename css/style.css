@@ -401,11 +401,11 @@ h3 {
 
   .open-left .side-left .intro-content {
     top: 100%;
-    -webkit-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    -moz-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    -o-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    -ms-transform: translateY(-150px) translateX(-130%) scale(0.5);
-    transform: translateY(-150px) translateX(-130%) scale(0.5);
+    -webkit-transform: translateY(-320px) translateX(-130%) scale(0.5);
+    -moz-transform: translateY(-320px) translateX(-130%) scale(0.5);
+    -o-transform: translateY(-320px) translateX(-130%) scale(0.5);
+    -ms-transform: translateY(-320px) translateX(-130%) scale(0.5);
+    transform: translateY(-320px) translateX(-130%) scale(0.5);
   }
 
   .open-left .side-left .intro-content #profileOne h1,
