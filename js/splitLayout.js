@@ -164,7 +164,7 @@ clonedProduct2.addEventListener('click', function(ev) {
 }, true);
 
 clonedProduct3.addEventListener('click', function(ev) {
-  var elm = clonedProduct2.cloneNode(true);
+  var elm = clonedProduct3.cloneNode(true);
   removeChildren(document.getElementById('product-view-wrapper'));
   document.getElementById('product-view-wrapper').appendChild(elm);
 }, true);
