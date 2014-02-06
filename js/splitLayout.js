@@ -64,40 +64,16 @@
 })();
 
 
+var clonedProduct = document.getElementById('profileOne')
 
+clonedProduct.addEventListener('click', function(ev) {
+  var elm = clonedProduct.cloneNode(true);
+  removeChildren(document.getElementById('helloworld'));
+  document.getElementById('helloworld').appendChild(elm);
+});
 
-
-
- //     document.getElementById('profileOne').addEventListener('click', function(ev) {
-    //       var elm = ev.target.cloneNode(true);
-    //       document.getElementById('helloworld').appendChild(elm);
-    //     })
-
-  //     var clonedProduct = document.getElementById('profileOne')
-
-  //     clonedProduct.addEventListener('click', function(ev) {
-  //       var elm = clonedProduct.cloneNode(true);
-  //       document.getElementById('helloworld').appendChild(elm);
-  //     })
-
-  // var clonedProduct = document.getElementById('profileOne')
-  // var cloneProdView = document.getElementById('helloworld')
-  // var catView       = document.getElementById('helloworld')
-
- //  clonedProduct.addEventListener('click', function(ev) {
- //    var elm = clonedProduct.cloneNode(true);
- //    document.getElementById('helloworld').appendChild(elm);
- //  });
-
- // var cloneProdView = document.getElementById('helloworld').querySelectorAll("*")
- //  catView.replaceChild(cloneProdView, );
-
-
-
-
-//  var clonedProduct = document.getElementById('profileOne')
-
-//     clonedProduct.addEventListener('click', function(ev) {
-//       var elm = clonedProduct.cloneNode(true);
-//       var cloneProdView = document.getElementById('helloworld').querySelectorAll("*")
-//       document.getElementById('helloworld').replaceChild(elm,cloneProdView);
+function removeChildren(element) {
+  while(element.firstElementChild) {
+    element.removeChild(element.firstElementChild);
+  }
+}
