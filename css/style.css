@@ -421,8 +421,11 @@ h3 {
 
   .open-left .side-left .intro-content #profileOne h1,
   .open-left .side-left .intro-content #profileTwo h1,
-  .open-left .side-left .intro-content #profileThree h1 {
-    display: none;
+  .open-left .side-left .intro-content #profileThree h1,
+  .open-left .side-left .intro-content #profileOne h3,
+  .open-left .side-left .intro-content #profileTwo h3,
+  .open-left .side-left .intro-content #profileThree h3 {
+    display: none !important;
   }
 
   .page-left #profileOne .product-image-wrapper,
