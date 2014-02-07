@@ -425,6 +425,16 @@ h3 {
     display: none;
   }
 
+  .page-left #profileOne .product-image-wrapper,
+  .page-left #profileTwo .product-image-wrapper,
+  .page-left #profileThree .product-image-wrapper {
+    margin: 0 auto;
+    margin-top: 7.5%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
   .back-right {
     right: 10%;
     top: 0;
