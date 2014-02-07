@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #444;
+}
+
+.screen {
+  font-family: 'Helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+  position: relative;
+  width: 256px;
+  height: 454.4px;
+  background: white;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  background: -moz-linear-gradient(top,  #55efcb 0%, #5bcaff 100%); /* FF3.6+ */
+  background: -o-linear-gradient(top,  #55efcb 0%,#5bcaff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #55efcb 0%,#5bcaff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #55efcb 0%,#5bcaff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55efcb', endColorstr='#5bcaff',GradientType=0 ); /* IE6-9 */  background-position-x: right;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.article-container {
+  width: 640px;
+  overflow-y: hidden;
+  -webkit-transform: scale3d(0.4, 0.4, 0.4);
+  -webkit-transform-origin: center bottom;
+  transition: -webkit-transform 0.3s;
+  margin-left: -192px;
+}
+
+/* scale to full-screen*/
+.scaled-article-container {
+  -webkit-transform: scale3d(1, 1, 1);
+}
+
+/* hover on article a lil bit of scale */
+.article-container li:hover {
+  -webkit-transform: scale3d(1, 1, 1);
+  border-color: gray;
+}
+
+ul {
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+}
+
+li {
+  display: inline-block;
+  left: 0;
+  min-width: 256px;
+  height: 454.4px;
+  font-size: 5rem;
+  background: #fff;
+  transition: 0.3s;
+  -webkit-transform: scale3d(0.98, 0.98, 0.98);
+  -webkit-transform-origin: center bottom;
+  border-right: thin solid transparent;
+  padding: 1.5rem;
+}
+li:first-child {
+  margin-left: 192px;
+}
+li:last-child {
+  margin-right: 192px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+p {
+  white-space: normal;
+  font-size: .9rem;
+  line-height: 1.4;
+  color: gray;
+}
