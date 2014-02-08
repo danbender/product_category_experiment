@@ -122,8 +122,8 @@ h3 {
 
 .product-image-wrapper img {
   max-width: 100%;
-  /*border-radius: 50%;*/
-  opacity: 1;
+/*  border-radiu: 50%;
+*/  opacity: 1;
 }
 
 .intro-content h1 span {
@@ -152,18 +152,18 @@ h3 {
 .back {
   position: fixed;
   top: 2%;
-  margin: 0 auto;
-  padding-left: 4%;
+  right: 5%;
   z-index: 500;
   display: block;
   color: #cecece !important;
   visibility: hidden;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 2px;
   text-align: center;
-  font-size: 22px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 50px;
   opacity: 0;
   pointer-events: none;
 }
@@ -173,7 +173,6 @@ h3 {
 }
 
 .back-right {
-  right: 12.5%;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -o-transform: translateX(50%);
@@ -406,22 +405,37 @@ h3 {
   }
 
   .intro-content {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .open-left .side-left .intro-content {
     top: 100%;
-    -webkit-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    -moz-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    -o-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    -ms-transform: translateY(-550px) translateX(-90%) scale(0.5);
-    transform: translateY(-550px) translateX(-90%) scale(0.5);
+    -webkit-transform: translateY(-550px) translateX(-107.5%) scale(0.4);
+    -moz-transform: translateY(-550px) translateX(-107.5%) scale(0.4);
+    -o-transform: translateY(-550px) translateX(-107.5%) scale(0.4);
+    -ms-transform: translateY(-550px) translateX(-107.5%) scale(0.4);
+    transform: translateY(-550px) translateX(-107.5%) scale(0.4);
   }
 
   .open-left .side-left .intro-content #profileOne h1,
   .open-left .side-left .intro-content #profileTwo h1,
-  .open-left .side-left .intro-content #profileThree h1 {
-    display: none;
+  .open-left .side-left .intro-content #profileThree h1,
+  .open-left .side-left .intro-content #profileOne h3,
+  .open-left .side-left .intro-content #profileTwo h3,
+  .open-left .side-left .intro-content #profileThree h3 {
+    display: none !important;
+  }
+
+  .page-left #profileOne .product-image-wrapper,
+  .page-left #profileTwo .product-image-wrapper,
+  .page-left #profileThree .product-image-wrapper {
+    margin: 0 auto;
+    margin-top: 7.5%;
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
 
   .back-right {
