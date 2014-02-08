@@ -28,20 +28,26 @@
    </div>
 </div>
   <script type="text/javascript">
-    var articles = document.getElementsByClassName("articles")
+    var fullViewArticle = document.querySelector('.articles')
+    fullViewArticle.addEventListener('click', function(ev) {
 
-    articles.addEventListener('click', function(ev) {
+      var el = document.querySelector('.layer')
+      var className = "scaled-article-container"
 
-      console.log('hello');
+      if (el.classList) {
+        el.classList.toggle(className);
+      } else {
+        var classes = el.className.split(' ');
+        var existingIndex = classes.indexOf(className);
 
-  //     if (el.classList)
-  //       el.classList.add("articles");
-  //     else
-  //       el."articles" += ' ' + "articles";
+        if (existingIndex >= 0)
+          classes.splice(existingIndex, 1);
+        else
+          classes.push(className);
 
-    }, true);
+        el.className = classes.join(' ');
+      }
+    }, true)
   </script>
 </body>
 </html>
-
-<!-- scaled-article-container -->
