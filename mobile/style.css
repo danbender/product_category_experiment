@@ -112,6 +112,11 @@ li {
   -webkit-transform: scale3d(0.98, 0.98, 0.98);
     -moz-transform: scale3d(0.98, 0.98, 0.98);
       -ms-transform: scale3d(0.98, 0.98, 0.98);
+        -o-transform: scale3d(0.98, 0.98, 0.98);
+          transform: scale3d(0.98, 0.98, 0.98);
+  -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
         -o-transform-origin: center bottom;
           transform-origin: center bottom;
   border-right: 1px solid transparent;
