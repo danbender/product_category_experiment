@@ -1,4 +1,5 @@
-var fullViewArticle = document.querySelector('.articles')
+// var fullViewArticle = document.querySelector('.articles')
+var fullViewArticle = document.querySelector('.articlesList')
 var el = document.querySelector('.layer')
 
 fullViewArticle.addEventListener('click', function(ev) {
