@@ -70,6 +70,7 @@ body {
       -ms-transform: scale3d(1, 1, 1);
        -o-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
+
 }
 
 /* hover on article a lil bit of scale */
@@ -79,10 +80,14 @@ body {
       -ms-transform: scale3d(1, 1, 1);
        -o-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
-  border-color: #cecece;
 }
 
-.scaled-article-container li:hover {
+.scaled-article-container ul li:hover {
+ /*-webkit-transform: scaled3d(1,1,1) !important;
+     -moz-transform: scaled3d(1,1,1) !important;
+      -ms-transform: scaled3d(1,1,1) !important;
+       -o-transform: scaled3d(1,1,1) !important;
+          transform: scaled3d(1,1,1) !important;*/
 }
 
 ul {

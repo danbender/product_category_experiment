@@ -29,9 +29,10 @@
 </div>
   <script type="text/javascript">
     var fullViewArticle = document.querySelector('.articles')
+    var el = document.querySelector('.layer')
+
     fullViewArticle.addEventListener('click', function(ev) {
 
-      var el = document.querySelector('.layer')
       var className = "scaled-article-container"
 
       if (el.classList) {
