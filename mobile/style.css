@@ -9,6 +9,7 @@
 html, body {
   position: relative;
   height: 100%;
+  margin: 0 auto;
 }
 
 body {
@@ -70,7 +71,6 @@ body {
       -ms-transform: scale3d(1, 1, 1);
        -o-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
-
 }
 
 /* hover on article a lil bit of scale */
@@ -82,12 +82,19 @@ body {
           transform: scale3d(1, 1, 1);
 }
 
-.scaled-article-container ul li {
-  -webkit-transform: scale3d(1, 1, 1);
-    -moz-transform: scale3d(1, 1, 1);
-      -ms-transform: scale3d(1, 1, 1);
-        -o-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
+.scaled-article-container ul li,
+.scaled-article-container ul li:hover {
+  -webkit-transform: scale3d(0.99, 1, 0.99);
+    -moz-transform: scale3d(0.99, 1, 0.99);
+      -ms-transform: scale3d(0.99, 1, 0.99);
+        -o-transform: scale3d(0.99, 1, 0.99);
+          transform: scale3d(0.99, 1, 0.99);
+  border: 2px solid transparent;
+}
+
+
+.article-container ul li img {
+ overflow: auto;
 }
 
 ul {
@@ -120,8 +127,9 @@ li {
       -ms-transform-origin: center bottom;
         -o-transform-origin: center bottom;
           transform-origin: center bottom;
-  border-right: 1px solid transparent;
+  border-right: thin solid transparent;
 }
+
 li:first-child {
   margin-left: 192px;
 }
