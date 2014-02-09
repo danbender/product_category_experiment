@@ -104,6 +104,7 @@ li {
   height: 454.4px;
   font-size: 5rem;
   background: #fff;
+  cursor: pointer;
   -webkit-transition: 0.3s;
      -moz-transition: 0.3s;
       -ms-transition: 0.3s;
