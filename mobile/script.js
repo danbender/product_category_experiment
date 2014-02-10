@@ -1,29 +1,16 @@
 var fullViewArticle = document.querySelector('.articlesList')
 var el = document.querySelector('.layer')
+var closeButton = document.getElementById("closeMeOnClick")
+var className = "scaled-article-container"
 
 fullViewArticle.addEventListener('click', function(ev) {
-  var className = "scaled-article-container"
-
-  // if (el.classList) {
-  //   el.classList.toggle(className);
-  // }else{
-  //   var classes = el.className.split(' ');
-  //   var existingIndex = classes.indexOf(className);
-
-  //   if (existingIndex >= 0) {
-  //     classes.splice(existingIndex, 1);
-  //   }else{
-  //     classes.push(className);
-  //   }
-  //   el.className = classes.join(' ');
-  // }
-
   if (el.classList)
     el.classList.add(className);
   else
     el.className += ' ' + className;
     document.querySelector('div.scaled-article-container').id = 'gallery';
     Swipester();
+    fadeIn(closeButton);
 }, false)
 
 
@@ -65,5 +52,20 @@ function Swipester() {
     }
   });
 }
+
+
+function fadeIn(el) {
+  el.style.opacity = 0;
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+    last = +new Date();
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+    }
+  };
+  tick();
+}
+
 
 

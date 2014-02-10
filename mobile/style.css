@@ -21,6 +21,16 @@ body {
   background: #282828;
 }
 
+a {
+  text-decoration: none;
+}
+
+#closeMeOnClick {
+  color: #cecece;
+  opacity: 0;
+}
+
+
 #screen {
   margin: 0 auto;
   position: relative;
