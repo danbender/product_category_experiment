@@ -25,12 +25,6 @@ a {
   text-decoration: none;
 }
 
-#closeMeOnClick {
-  color: #cecece;
-  opacity: 0;
-}
-
-
 #screen {
   margin: 0 auto;
   position: relative;
@@ -51,7 +45,20 @@ a {
   position: absolute;
   top: 5px;
   right: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  color: #cecece;
+  opacity: 0;
   z-index: 9999999999;
+}
+
+#closeMeOnClick:hover, #closeMeOnClick:focus, #closeMeOnClick:active {
+  color: #282828;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 .layer {
