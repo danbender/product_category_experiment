@@ -26,7 +26,6 @@ body {
   position: relative;
   width: 256px;
   height: 454.4px;
-  top: 25%;
   background: #fff;
   background: -moz-linear-gradient(top,  #55efcb 0%, #5bcaff 100%); /* FF3.6+ */
   background: -o-linear-gradient(top,  #55efcb 0%,#5bcaff 100%); /* Opera 11.10+ */
@@ -86,6 +85,8 @@ body {
 
 .scaled-article-container ul li,
 .scaled-article-container ul li:hover {
+  margin: 0 auto;
+  text-align: center;
   -webkit-transform: scale3d(0.99, 1, 0.99);
     -moz-transform: scale3d(0.99, 1, 0.99);
       -ms-transform: scale3d(0.99, 1, 0.99);
@@ -94,10 +95,14 @@ body {
   border: 2px solid transparent;
 }
 
+.article-container ul li .item,
+.scaled-article-container ul li .item {
+  text-align: center;
+}
 
 .article-container ul li img {
- overflow: auto;
- -webkit-user-select: none;
+  margin: 0 auto;
+  -webkit-user-select: none;
     -moz-user-select: none;
       -ms-user-select: none;
         user-select: none;
