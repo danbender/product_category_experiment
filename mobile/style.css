@@ -7,7 +7,7 @@
 }
 
 html, body {
-  font-family: 'Helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   position: relative;
   height: 100%;
   margin: 0 auto;
@@ -44,6 +44,14 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55efcb', endColorstr='#5bcaff',GradientType=0 ); /* IE6-9 */  background-position-x: right;
   background-size: cover;
   overflow: hidden;
+}
+
+
+#closeMeOnClick {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 9999999999;
 }
 
 .layer {
