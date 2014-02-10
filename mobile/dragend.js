@@ -107,9 +107,9 @@
       isTouch = 'ontouchstart' in document.documentElement,
 
       keycodes = {
-        37: "left",
+        39: "left",
         38: "up",
-        39: "right",
+        37: "right",
         40: "down"
       },
 
