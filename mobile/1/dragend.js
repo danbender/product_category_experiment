@@ -96,12 +96,12 @@
         itemsInPage        : 1,
         scribe             : 0,
         borderBetweenPages : 0,
-        duration           : 600,
-        hammerSettings     : {
-          drag_min_distance: 0,
-          css_hacks        : true,
-          prevent_default  : false
-        }
+        duration           : 450
+        // hammerSettings     : {
+        //   drag_min_distance: 0,
+        //   css_hacks        : true,
+        //   prevent_default  : false
+        // }
       },
 
       isTouch = 'ontouchstart' in document.documentElement,

@@ -1,37 +1,49 @@
-var fullViewArticle = document.querySelector('.articlesList')
+swipester();
+
+
 var className = "scaled-article-container"
 var el = document.querySelector('.layer')
 var closeButton = document.getElementById("closeMeOnClick")
 
+var fullViewArticle = document.querySelector('.articlesList')
 fullViewArticle.addEventListener('click', function(ev) {
   if (el.classList)
     el.classList.add(className);
   else
     el.className += ' ' + className;
-    document.querySelector('div.scaled-article-container').id = 'gallery';
-    Swipester();
     fadeIn(closeButton);
-}, false)
+}, true)
+
 
 closeButton.addEventListener('click', function(ev) {
   if (el.classList) {
     el.classList.remove(className);
     closeButton.style.opacity = '0';
-    document.getElementById('gallery').removeAttribute("id")
-
   }else{
     el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
   }
-})
+}, true)
 
 
 
-function Swipester() {
-  $("#gallery").dragend({
+
+function fadeIn(el) {
+  el.style.opacity = 0;
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+    last = +new Date();
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+    }
+  };
+  tick();
+}
+
+function swipester() {
+  $(".article-container").dragend({
     borderBetweenPages: 1,
-    afterInitialize: function() {
-      $("#screen").css("visibility", "visible");
-    },
+
     onDrag: function( activeElement, event, overscroll ) {
       var deltaX = parseInt( event.distanceX / 2 );
 
@@ -64,15 +76,3 @@ function Swipester() {
 }
 
 
-function fadeIn(el) {
-  el.style.opacity = 0;
-  var last = +new Date();
-  var tick = function() {
-    el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
-    last = +new Date();
-    if (+el.style.opacity < 1) {
-      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
-    }
-  };
-  tick();
-}
