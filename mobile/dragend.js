@@ -84,22 +84,22 @@
       defaultSettings = {
         pageClass          : "dragend-page",
         direction          : "horizontal",
-        minDragDistance    : "40",
+        minDragDistance    : "20",
         onSwipeStart       : noop,
         onSwipeEnd         : noop,
         onDragStart        : noop,
         onDrag             : noop,
         onDragEnd          : noop,
         afterInitialize    : noop,
-        keyboardNavigation : false,
+        keyboardNavigation : true,
         stopPropagation    : false,
         itemsInPage        : 1,
         scribe             : 0,
         borderBetweenPages : 0,
-        duration           : 300,
+        duration           : 600,
         hammerSettings     : {
           drag_min_distance: 0,
-          css_hacks        : false,
+          css_hacks        : true,
           prevent_default  : false
         }
       },
@@ -692,7 +692,7 @@
 
       },
 
-      // ### Callculate new page
+      // ### Calculate new page
       //
       // Update global values for specific swipe action
       //
