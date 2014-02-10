@@ -1,7 +1,7 @@
 var fullViewArticle = document.querySelector('.articlesList')
+var className = "scaled-article-container"
 var el = document.querySelector('.layer')
 var closeButton = document.getElementById("closeMeOnClick")
-var className = "scaled-article-container"
 
 fullViewArticle.addEventListener('click', function(ev) {
   if (el.classList)
@@ -17,11 +17,12 @@ closeButton.addEventListener('click', function(ev) {
   if (el.classList) {
     el.classList.remove(className);
     closeButton.style.opacity = '0';
+    document.getElementById('gallery').removeAttribute("id")
+
   }else{
     el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
   }
 })
-
 
 
 
