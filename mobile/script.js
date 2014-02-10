@@ -13,6 +13,15 @@ fullViewArticle.addEventListener('click', function(ev) {
     fadeIn(closeButton);
 }, false)
 
+closeButton.addEventListener('click', function(ev) {
+  if (el.classList) {
+    el.classList.remove(className);
+    closeButton.style.opacity = '0';
+  }else{
+    el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+  }
+})
+
 
 
 
@@ -66,6 +75,3 @@ function fadeIn(el) {
   };
   tick();
 }
-
-
-
