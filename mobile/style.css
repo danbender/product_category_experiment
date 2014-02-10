@@ -26,8 +26,7 @@ body {
   position: relative;
   width: 256px;
   height: 454.4px;
-  left: 50%;
-  top: 50%;
+  top: 25%;
   background: #fff;
   background: -moz-linear-gradient(top,  #55efcb 0%, #5bcaff 100%); /* FF3.6+ */
   background: -o-linear-gradient(top,  #55efcb 0%,#5bcaff 100%); /* Opera 11.10+ */
