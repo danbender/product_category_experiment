@@ -1,6 +1,21 @@
+html {
+	margin: 0 auto;
+	padding: 0 auto;
+	font-family: 'Helvetica', sans-serif;
+}
+
+#container {
+	margin: 0 auto;
+}
+
+
+a {
+	text-decoration: none;
+}
+
 .slidester {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 100px;
 	height: 490px;
 }
 
