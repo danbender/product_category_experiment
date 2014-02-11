@@ -24,7 +24,7 @@ a {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	/*bottom: 140px;*/
+	bottom: 140px;
 	overflow: hidden;
 	text-align: center;
 	pointer-events: none;
