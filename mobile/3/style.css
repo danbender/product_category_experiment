@@ -18,23 +18,23 @@
   position: relative;
   background-position: -100px 0;
 }
-.temp {
+.description {
   position: absolute;
   color: white;
-  font-size: 100px;
+  font-size: 40px;
   bottom: 15px;
   left: 15px;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Helvetica', serif;
   font-weight: 100;
 }
 #slide-0 {
-  background-image: url(http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg);
+  background-image: url(1.jpg);
 }
 #slide-1 {
-  background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+  background-image: url(2.jpg);
 }
 #slide-2 {
-  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+  background-image: url(3.jpg);
 }
 .slide:before {
   content: "";
