@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="screen">
+    <a href="#" id="closeMeOnClick">&#10005</a>
+
+    <div class="article-container layer">
+      <ul class="articlesList">
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka1_sm.png" alt="a parka">
+          </div>
+        </li>
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka2_sm.png" alt="">
+          </div>
+        </li>
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka3_sm.png" alt="">
+          </div>
+        </li>
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka1_sm.png" alt="">
+          </div>
+        </li>
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka2_sm.png" alt="">
+          </div>
+        </li>
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka3_sm.png" alt="">
+          </div>
+        </li>
+        <li class="articles dragend-page">
+          <div class="item">
+            <h1>Parka</h1>
+            <p>219,99 Euro</p>
+            <img src="../../img/parka1_sm.png" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    var className = "scaled-article-container"
+    var el = document.querySelector('.layer')
+    var closeButton = document.getElementById("closeMeOnClick")
+
+    var fullViewArticle = document.querySelector('.articlesList')
+    fullViewArticle.addEventListener('click', function(ev) {
+      if (el.classList)
+        el.classList.add(className);
+      else
+        el.className += ' ' + className;
+      fadeIn(closeButton);
+    }, true)
+
+    closeButton.addEventListener('click', function(ev) {
+      if (el.classList) {
+        el.classList.remove(className);
+        closeButton.style.opacity = '0';
+      }else{
+        el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+      }
+    }, true)
+
+    function fadeIn(el) {
+      el.style.opacity = 0;
+      var last = +new Date();
+      var tick = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+        last = +new Date();
+        if (+el.style.opacity < 1) {
+          (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+        }
+      };
+      tick();
+    }
+
+  </script>
+</body>
+</html>
