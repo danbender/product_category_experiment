@@ -6,7 +6,7 @@
 .slider {
   overflow-x: scroll;
 }
-.holder {
+.slideHolder {
   width: 300%;
 }
 .slide {
@@ -15,14 +15,15 @@
   height: 500px;
   position: relative;
   background-position: -100px 0;
+  border-radius: 3px;
 }
 .description {
   position: absolute;
-  color: white;
-  font-size: 40px;
+  color: #282828;
+  font-size: 50px;
   bottom: 15px;
   left: 15px;
-  font-family: 'Helvetica', serif;
+  font-family: 'Helvetica Neue', serif;
   font-weight: 100;
 }
 #slide-0 {
@@ -41,7 +42,12 @@
   left: 0;
   width: 100%;
   height: 40%;
-  background: linear-gradient(transparent, black);
+  background: -webkit-linear-gradient(transparent, #cecece);
+    background: -moz-linear-gradient(transparent, #cecece);
+      background: -o-linear-gradient(transparent, #cecece);
+        background: -ms-linear-gradient(transparent, #cecece);
+          background: linear-gradient(transparent, #cecece);
+  opacity: 0.8; ;
 }
 .slider-nav {
   text-align: center;
@@ -51,11 +57,11 @@
   width: 10px;
   height: 10px;
   display: inline-block;
-  background: #ddd;
+  background: #cecece;
+  border-radius: 50%;
   overflow: hidden;
   text-indent: -9999px;
-  border-radius: 50%;
 }
 .slider-nav a.active {
-  background: #999;
+  background-color: #282828;
 }
