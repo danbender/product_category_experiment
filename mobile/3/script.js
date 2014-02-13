@@ -55,3 +55,4 @@ slider.init();
 
 // http://codepen.io/BaylorRae/pen/ImGBC
 // Originally added click links, so I ported over and re-wrote
+// slider based on http://css-tricks.com/slider-with-sliding-backgrounds/
