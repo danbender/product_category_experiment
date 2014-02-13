@@ -41,7 +41,7 @@ var slider = {
 
   handleNavClick: function(event, el) {
     event.preventDefault();
-    var position = $(el).attr("href").split("-").pop();
+    var position = $(el).attr("data-index");
 
     this.el.slider.animate({
       scrollLeft: position * this.slideWidth
