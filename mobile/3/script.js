@@ -6,7 +6,7 @@ var slider = {
     slider: $("#slider"),
     allSlides: $(".slide"),
     sliderNav: $(".slider-nav"),
-    allNavButtons: $(".slider-nav > a")
+    allNavButtons: $(".slider-nav a")
   },
 
   timing: 800,
