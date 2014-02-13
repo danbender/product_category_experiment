@@ -1,7 +1,5 @@
 var slider = {
 
-  // Not sure if keeping element collections like this
-  // together is useful or not.
   el: {
     slider: $("#slider"),
     allSlides: $(".slide"),
@@ -10,30 +8,26 @@ var slider = {
   },
 
   timing: 800,
-  slideWidth: 300, // could measure this
+  slideWidth: 300,
 
-  // In this simple example, might just move the
-  // binding here to the init function
   init: function() {
     this.bindUIEvents();
   },
 
   bindUIEvents: function() {
-    // You can either manually scroll...
+    // Either on manual scroll...
     this.el.slider.on("scroll", function(event) {
       slider.moveSlidePosition(event);
     });
-    // ... or click a thing
+    // or on click
     this.el.sliderNav.on("click", "a", function(event) {
       slider.handleNavClick(event, this);
     });
-    // What would be cool is if it had touch
-    // events where you could swipe but it
-    // also kinda snapped into place.
+    // or touch event and snap into place
   },
 
   moveSlidePosition: function(event) {
-    // Magic Numbers =(
+    // the 6-100 are 'hard-coded'...they make it work for the specfic width and height
     this.el.allSlides.css({
       "background-position": $(event.target).scrollLeft()/6-100+ "px 0"
     });
