@@ -23,7 +23,6 @@ var slider = {
     this.el.sliderNav.on("click", "a", function(event) {
       slider.handleNavClick(event, this);
     });
-    // or touch event and snap into place
   },
 
   moveSlidePosition: function(event) {
