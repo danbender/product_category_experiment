@@ -1,6 +1,5 @@
 $("#slider").on("scroll", function(e) {
-  $(".slide")
-  .css({
+  $(".slide").css({
     "background-position": $(e.target).scrollLeft()/12+ "% 0"
   });
 });
